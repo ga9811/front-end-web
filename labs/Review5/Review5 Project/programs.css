@@ -1,0 +1,72 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 5
+   Review Assignment
+
+   Programming Table Style Sheet
+   Author: 
+   Date:   
+
+   Filename:         programs.css
+   Supporting Files: 
+
+*/
+table{
+   width: 100%;
+   border: solid;
+   border-color: black;
+   border-width: 2px;
+   border-collapse:collapse ;
+   font-family: Arial, Verdana, sans-serif;
+}
+table.programs caption{
+   text-align: left;
+   font-size: 0.8em;
+   caption-side: bottom;
+   
+}
+
+table.programs tbody td{
+   font-size: 0.7em;
+   vertical-align: text-top ;
+   border: solid gray 1px;
+   padding: 2px;
+}
+table.programs tr{
+   height: 25px;
+}
+table.programs thead{
+   color:white;
+   background-color: rgb(105,177,60);
+
+}
+table.programs th{
+   font-size: 0.7em;
+   border: 1px gray;
+}
+table.programs thead th:first-of-type {
+   background-color: rgb(153,86,7);
+}
+table.programs thead th:nth-of-type(7) {
+   background-color: rgb(153,0,153);
+}
+table.programs thead th:nth-of-type(8) {
+   background-color: rgb(153,0,153);
+}
+table.programs col.timeColumn {
+   background-color: rgb(215,205,151);
+   width:10%;
+}
+table.programs col.wDayColumns {
+   background-color: rgb(236,255,211);
+   width:11%;
+}
+table.programs col.wEndColumns {
+   background-color: rgb(255,231,255);
+   width:17%;
+}
+p{
+   column-count: 3;
+   column-gap: 20px;
+   column-rule: 1px solid black;
+}

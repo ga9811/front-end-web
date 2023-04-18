@@ -1,0 +1,60 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 5
+   Case Problem 1
+
+   Sudoku Puzzle Table Style Sheet
+  Author: Yong Cao
+      Date:   2023-04-11 
+
+   Filename:         stable.css
+   Supporting Files: green.jpg, gold.jpg
+
+*/
+
+/* Collapse borders for spuzzle and subTable tables */
+table.spuzzle,
+table.subTable {
+  border-collapse: collapse;
+}
+
+/* 5-pixel outset gray border for table data cells within the spuzzle table */
+table.spuzzle td {
+  border: 5px outset gray;
+}
+
+/* Font size and color for table header cells within the spuzzle table */
+table.spuzzle th {
+  font-size: 8px;
+  color: gray;
+}
+
+/* Height of table header cells within the table body row group of the spuzzle table */
+table.spuzzle tbody th {
+  height: 40px;
+}
+
+/* Style for table data cells within the subTable table */
+table.subTable td {
+  font-size: 20px;
+  color: blue;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid black;
+}
+
+/* Background image for table data cells nested within the goldBox class */
+td.goldBox > table.subTable td {
+  background-image: url('gold.jpg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+/* Background image for table data cells nested within the greenBox class */
+td.greenBox > table.subTable td {
+  background-image: url('green.jpg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}

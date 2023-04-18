@@ -1,0 +1,62 @@
+/*
+   New Perspectives on HTML
+   Tutorial 3
+   Case Problem 1
+
+   ICI Text and Color Styles
+   Author: yong cao
+   Date:  2023-03-30 
+
+   Filename:         c_styles.css
+   Supporting Files: none
+
+*/
+/* Set the color of the page
+body background and text to black and white, respectively. Set the default font to a
+list consisting of Century Gothic followed by a generic sans-serif font. */
+body {
+   background-color: black;
+   color: white;
+   font-family: 'Century Gothic', sans-serif;
+}
+/* Add a style rule for hi headings nested w'ithin a header element to: a) display the
+text in yellow; b) use Courier New, Courier, or another monospace font; c) set the
+font size to 28 pixels w'ith a kerning of 20 pixels; and d) center the text. */
+header h1 {
+   color: yellow;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 28px;
+   letter-spacing: 20px;
+   text-align: center;
+}
+/* Add a style rule for h2 headings nested within an article element to: a) set the font
+size to 24 pixels; b) display the text without boldface; and c) set the kerning to 5 pixels. */
+article header h2{
+   font-size: 24px;
+   font-weight: normal;
+   kerning: 5px;
+
+}
+/* Align paragraph text within the article element using full justification. */
+article p{
+   text-align: justify;
+}
+/* For strong elements belonging to the keyword class, create a style rule that displays
+the text in a yellow, non-bold font. */
+strong.keyword {
+   color: yellow;
+   font-weight: normal;
+}
+/* Center the contents of paragraphs nested within the footer element. */
+
+footer p {
+   text-align: center;
+}
+/* don't want image maps to appear with a colored border. To remove the border,
+create a style rule for inline images that contain the usemap attribute and set the border
+wridth to 0 pixels. */
+img[usemap] {
+   border-width: 0;
+}
+
+
